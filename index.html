@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Team Name and ID</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #eef2f7;
+      --surface: #ffffff;
+      --ink: #14213d;
+      --muted: #5b6b86;
+      --line: #d3dbe8;
+      --accent: #2f5bea;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f1728;
+        --surface: #17213a;
+        --ink: #eaf0fb;
+        --muted: #9fb0cc;
+        --line: #2b3a5c;
+        --accent: #7fa0ff;
+      }
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; }
+    body {
+      min-height: 100vh;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: "Manrope", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+      line-height: 1.5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+    main { width: 100%; max-width: 640px; }
+    .table-wrap {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-top: 6px solid var(--accent);
+      border-radius: 6px;
+      overflow-x: auto;
+    }
+    table { width: 100%; border-collapse: collapse; text-align: center; }
+    th, td { padding: 20px 16px; }
+    th {
+      font-weight: 800;
+      font-size: 1.4rem;
+      letter-spacing: -0.01em;
+      border-bottom: 1px solid var(--line);
+    }
+    td { font-size: 1.1rem; }
+    tbody tr + tr td { border-top: 1px solid var(--line); }
+    td:first-child { font-weight: 600; }
+    td:last-child {
+      color: var(--muted);
+      font-variant-numeric: tabular-nums;
+      letter-spacing: 0.04em;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Team Name</th>
+            <th scope="col">ID</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Andrew Remon Talaat</td>
+            <td>20240094</td>
+          </tr>
+          <tr>
+            <td>Joy Magdy Serry</td>
+            <td>20240149</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</body>
+</html>
